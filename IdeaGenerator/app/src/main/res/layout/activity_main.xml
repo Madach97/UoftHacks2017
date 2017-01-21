@@ -7,7 +7,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.owner.ideagenerator.MainActivity">
+    tools:context="com.example.owner.WhatTheHack.MainActivity">
+
+    <Button
+        android:text="@android:string/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="onClick"
+        android:layout_below="@+id/searchEntry"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchEntry"
+        android:layout_marginTop="19dp"
+        android:inputType="textAutoComplete"
+        android:text="Enter search here"
+        android:layout_below="@+id/hackathon_ideas"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,18 +35,8 @@
         android:text="@string/hackathon_ideas"
         android:id="@+id/hackathon_ideas"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="51dp"
-        android:layout_marginStart="51dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchEntry"
-        android:text="@string/enter_your_search_here"
-        android:layout_marginTop="21dp"
-        android:layout_below="@+id/hackathon_ideas"
         android:layout_centerHorizontal="true"
-        android:inputType="textAutoComplete" />
+        android:layout_marginTop="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,18 +44,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/new_idea_appears_here"
         android:id="@+id/newIdea"
-        android:layout_marginTop="40dp"
-        android:layout_below="@+id/searchEntry"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="@android:string/ok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/newIdea"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/button2"
-        android:onClick="onClick"/>
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/hackathon_ideas"
+        android:layout_alignStart="@+id/hackathon_ideas"
+        android:layout_marginTop="56dp"
+        android:layout_alignRight="@+id/hackathon_ideas"
+        android:layout_alignEnd="@+id/hackathon_ideas" />
 
 </RelativeLayout>

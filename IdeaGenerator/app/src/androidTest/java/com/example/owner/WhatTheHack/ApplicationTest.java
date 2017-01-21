@@ -1,4 +1,4 @@
-package com.example.owner.ideagenerator;
+package com.example.owner.WhatTheHack;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

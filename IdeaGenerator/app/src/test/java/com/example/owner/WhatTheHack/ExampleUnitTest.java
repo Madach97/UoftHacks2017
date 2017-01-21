@@ -1,4 +1,4 @@
-package com.example.owner.ideagenerator;
+package com.example.owner.WhatTheHack;
 
 import org.junit.Test;
 

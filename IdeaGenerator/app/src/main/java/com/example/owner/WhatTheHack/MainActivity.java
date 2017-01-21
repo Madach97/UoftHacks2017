@@ -1,5 +1,5 @@
-package com.example.owner.ideagenerator;
-
+package com.example.owner.WhatTheHack;
+import java.lang.String;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,9 +20,10 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view)
                     {
                         CharSequence searchField = searchInput.getText();
+
                         RandomSentenceGenerator ideas = new RandomSentenceGenerator();
                         //CharSequence something = ideas.getIdeas(searchField);
-                        CharSequence newIdeas = ideas.generateIdea();
+                        CharSequence newIdeas = ideas.generateIdea(searchField.toString());
                         newIdea.setText(newIdeas);
                     }
                 }
