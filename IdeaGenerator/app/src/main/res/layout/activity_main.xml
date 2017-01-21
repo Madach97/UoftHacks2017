@@ -13,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Hackathon Ideas"
-        android:id="@+id/Hackathon_ideas"
+        android:text="@string/hackathon_ideas"
+        android:id="@+id/hackathon_ideas"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="51dp"
         android:layout_marginStart="51dp" />
@@ -22,19 +22,30 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:text="Enter your search here"
-        android:layout_below="@+id/Hackathon_ideas"
-        android:layout_alignRight="@+id/Hackathon_ideas"
-        android:layout_alignEnd="@+id/Hackathon_ideas"
-        android:layout_marginTop="18dp" />
+        android:id="@+id/searchEntry"
+        android:text="@string/enter_your_search_here"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/hackathon_ideas"
+        android:layout_centerHorizontal="true"
+        android:inputType="textAutoComplete" />
 
     <SearchView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/searchView"
-        android:layout_alignTop="@+id/editText"
-        android:layout_toRightOf="@+id/editText"
-        android:layout_toEndOf="@+id/editText" />
+        android:id="@+id/searchButton"
+        android:layout_alignTop="@+id/searchEntry"
+        android:layout_toRightOf="@+id/searchEntry"
+        android:layout_toEndOf="@+id/searchEntry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/new_idea_appears_here"
+        android:id="@+id/newIdea"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/searchButton"
+        android:layout_alignLeft="@+id/hackathon_ideas"
+        android:layout_alignStart="@+id/hackathon_ideas" />
 
 </RelativeLayout>
