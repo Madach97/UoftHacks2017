@@ -29,23 +29,24 @@
         android:layout_centerHorizontal="true"
         android:inputType="textAutoComplete" />
 
-    <SearchView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchButton"
-        android:layout_alignTop="@+id/searchEntry"
-        android:layout_toRightOf="@+id/searchEntry"
-        android:layout_toEndOf="@+id/searchEntry" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/new_idea_appears_here"
         android:id="@+id/newIdea"
-        android:layout_marginTop="47dp"
-        android:layout_below="@+id/searchButton"
-        android:layout_alignLeft="@+id/hackathon_ideas"
-        android:layout_alignStart="@+id/hackathon_ideas" />
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/searchEntry"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@android:string/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newIdea"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button2"
+        android:onClick="onClick"/>
 
 </RelativeLayout>

@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button searchButton = (Button)findViewById(R.id.searchButton);
+        Button searchButton = (Button)findViewById(R.id.button2);
         final TextView newIdea = (TextView)findViewById(R.id.newIdea);
         final EditText searchInput = (EditText)findViewById(R.id.searchEntry);
         searchButton.setOnClickListener(
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
                     {
                         CharSequence searchField = searchInput.getText();
                         RandomSentenceGenerator ideas = new RandomSentenceGenerator();
-                        CharSequence something = ideas.getIdeas(searchField);
+                        //CharSequence something = ideas.getIdeas(searchField);
                         CharSequence newIdeas = ideas.generateIdea();
                         newIdea.setText(newIdeas);
                     }
