@@ -9,10 +9,10 @@ public class RandomSentenceGenerator{
     static String Idea;
 
     String generateIdea(String input){
-        String [] Technologies = {"Amazon Echo", "HoloLens", "Oculus Rift", "iPad", "Quantum Computing", "Pebble", "Machine Learning", "Artificial Intelligence", "Cross-platform", "Cloud Computing"};
-        String [] Products = {"Notetaking app", "Social media platform", "Personal assistant", "Frogger game", "Sleep tracker", "Fitness app", "Data virtualization", "Data mining", "Productivity app", "Uber", "AirBnB"};
-        String [] Demographics = {"Seniors", "Teens", "Hipsters", "Young Professionals", "Toddlers", "Big Families", "Billionaires", "Vegans"};
-        String [] Inspiration = {"Climate change", "Net neutrality", "Bitcoin", "Big Data", "Politics"};
+        String [] Technologies = {"Amazon Echo", "HoloLens", "Oculus Rift", "iPad", "Quantum Computing", "Pebble", "Machine Learning", "Artificial Intelligence", "Cross-platform", "Cloud Computing", "Augmented Reality", "Crowdsourced", "Anonymous", "End-to-end encrypted"};
+        String [] Products = {"Notetaking app", "Social media platform", "Personal assistant", "Frogger game", "Sleep tracker", "Fitness app", "Data virtualization", "Data mining", "Productivity app", "Uber", "AirBnB", "Cryptocurrency", "Cybersecurity Defence", "Self-driving Car", "Self-driving Ice Cream Truck", "Sans-serif font", "Cloud storage platform", "JavaScript Microframework", "IoT platform", "Camera glasses", "Fire extenguisher phone case", "pronounciation for 'GIF'"};
+        String [] Demographics = {"Seniors", "Teens", "Hipsters", "Young Professionals", "Toddlers", "Big Families", "Billionaires", "Vegans", "Venture Capitalists", "Automotive industry", "Gamers", "New Parents", "Drunk coders", "Information Security professionals", "Authors", "Artists"};
+        String [] Inspiration = {"Climate change", "Net neutrality", "Bitcoin", "Big Data", "Politics", "Livestreaming", "Caligraphy", "Samsung Galaxy Note 7s", "Justin Bieber"};
 
 
         String result= "";
